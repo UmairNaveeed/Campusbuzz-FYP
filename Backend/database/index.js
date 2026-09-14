@@ -1,0 +1,38 @@
+// MongoDB/Mongoose models - same export names as before for controller compatibility
+export {
+  User,
+  Post,
+  Comment,
+  Hashtag,
+  Report,
+  Share,
+  Repost,
+  Conversation,
+  Message,
+  UserFollow,
+  PostLike,
+  PostHashtag,
+  PostMention,
+  CommentLike,
+  UserMedia,
+  UserLikedPost,
+  UserCommentedPost,
+  ConversationParticipant,
+  ConversationBlockedBy,
+  ConversationDeletedBy,
+  MessageReadBy,
+  MessageReaction,
+  MessageStarredBy,
+  MessageDeletedBy,
+  PostReport,
+  MessageReport,
+  GroupInvite,
+  GroupJoinRequest,
+  Notification,
+  AlumniSignup,
+  CustomList,
+  AdminCredential,
+} from './mongooseModels.js';
+
+// For code that expects sequelize (e.g. raw queries) - we don't export sequelize anymore
+export const sequelize = null;

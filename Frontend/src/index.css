@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Original colors - Batman 2022 theme */
+  /* --background: 0 0% 97%; */
+  /* --foreground: 222 47% 11%; */
+  /* --card: 0 0% 100%; */
+  /* --card-foreground: 222 47% 11%; */
+  /* --popover: 0 0% 100%; */
+  /* --popover-foreground: 222 47% 11%; */
+  /* --primary: 264 83% 64%; */
+  /* --primary-foreground: 0 0% 100%; */
+  /* --secondary: 220 14% 96%; */
+  /* --secondary-foreground: 222 47% 11%; */
+  /* --muted: 220 14% 96%; */
+  /* --muted-foreground: 220 9% 46%; */
+  /* --accent: 240 100% 97%; */
+  /* --accent-foreground: 245 58% 51%; */
+  /* --destructive: 0 84% 60%; */
+  /* --destructive-foreground: 0 0% 100%; */
+  /* --border: 220 13% 84%; */
+  /* --input: 220 13% 84%; */
+  /* --ring: 264 83% 64%; */
+
+  /* --sidebar-background: 247 67% 22%; */
+  /* --sidebar-foreground: 0 0% 100%; */
+  /* --sidebar-primary: 264 83% 64%; */
+  /* --sidebar-primary-foreground: 0 0% 100%; */
+  /* --sidebar-accent: 247 55% 30%; */
+  /* --sidebar-accent-foreground: 0 0% 100%; */
+  /* --sidebar-border: 247 45% 34%; */
+  /* --sidebar-ring: 264 83% 64%; */
+
+  /* Batman 2022 Theme - Black & Red */
+  --background: 0 0% 97%;
+  --foreground: 222 47% 11%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 47% 11%;
+  --primary: 264 83% 64%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 220 14% 96%;
+  --secondary-foreground: 222 47% 11%;
+  --muted: 220 14% 96%;
+  --muted-foreground: 220 9% 46%;
+  --accent: 240 100% 97%;
+  --accent-foreground: 245 58% 51%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 220 13% 84%;
+  --input: 220 13% 84%;
+  --ring: 264 83% 64%;
+
+  --sidebar-background: 247 67% 22%;
+  --sidebar-foreground: 0 0% 100%;
+  --sidebar-primary: 264 83% 64%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 247 55% 30%;
+  --sidebar-accent-foreground: 0 0% 100%;
+  --sidebar-border: 247 45% 34%;
+  --sidebar-ring: 264 83% 64%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  color: #0f1419;
+  background-color: #f7f9fc;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+::selection {
+  background: rgba(29, 155, 240, 0.2);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Ensure images and videos are responsive */
+img, picture, video, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Make modals and other containers scroll nicely on small devices */
+.modal-scrollable {
+  max-height: 90vh;
+  overflow-y: auto;
+}
