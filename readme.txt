@@ -66,28 +66,31 @@ CampusBuzz
 ---
 
 ## Installation
+## Installation & Configuration
 
-### Clone Repository
+### 1. Clone the Repository
+git clone https://github.com/UmairNaveeed/Campusbuzz-FYP.git
+cd Campusbuzz-FYP
 
-https://github.com/samannn-z/CampussBuzz.git
-
-### Install Backend
-
+### 2. Install Dependencies
+# Install Backend
 cd Backend
-
 npm install
 
-### Install Frontend
-
+# Install Frontend
 cd ../Frontend
-
 npm install
 
-### Install ML Service
-
+# Install ML Service
 cd ../MLService
-
 pip install -r requirements.txt
+
+### 3. Environment & Credentials Setup (Crucial)
+Because security keys are excluded from version control, you must configure your local environment:
+
+- MongoDB: Ensure your local MongoDB instance is running (via MongoDB Compass or MongoDB service) on `mongodb://localhost:27017` or set up your connection string.
+- **Firebase:** Generate your Firebase service account JSON key from your Firebase Console and place it at:
+  `Backend/firebaseAdmin/serviceAccountKey.json`
 
 ---
 
